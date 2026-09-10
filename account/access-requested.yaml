@@ -1,0 +1,17 @@
+id: account.access-requested
+contentFile: access-requested.md
+name: User Access Requested
+description: Sent to Admins when a user requests access to the Submission Portal.
+notificationKey: access:requested
+subject: "USER Request CRDC Data Submission Portal Access"
+variables:
+  - firstName
+  - senderName
+  - userName
+  - accountType
+  - email
+  - role
+  - studies
+  - institutionName
+blocks:
+  - additionalInfo

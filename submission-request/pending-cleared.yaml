@@ -1,0 +1,13 @@
+id: submission-request.pending-cleared
+contentFile: pending-cleared.md
+name: Submission Request Pending Condition Cleared
+description: Sent to the submitter when all pending approval conditions on an approved study have been cleared.
+notificationKey: submission_request:pending_cleared
+subject: "Your CRDC Submission Request Pending Condition Cleared"
+variables:
+  - firstName
+  - studyName
+  - portalURL
+  - submissionGuideURL
+  - contactEmail
+  - senderName

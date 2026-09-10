@@ -1,0 +1,10 @@
+id: submission-request.restored
+contentFile: restored.md
+name: Submission Request Restored
+description: Sent to the owner when a canceled SRF is restored.
+notificationKey: submission_request:canceled
+subject: "Your CRDC Submission Request Has Been Restored"
+variables:
+  - firstName
+  - studyName
+  - contactEmail

@@ -1,0 +1,14 @@
+id: submission-request.reopened
+contentFile: reopened.md
+name: Submission Request Reopened
+description: Sent to the owner when an approved SRF is reopened for updates.
+notificationKey: submission_request:reopened
+subject: "Your CRDC Submission Request Has Been Reopened"
+variables:
+  - firstName
+  - studyName
+  - studyAbbreviation
+  - programName
+  - programAbbreviation
+  - contactEmail
+  - isOwnershipChanged

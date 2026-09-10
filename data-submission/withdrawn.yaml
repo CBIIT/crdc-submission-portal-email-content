@@ -1,0 +1,13 @@
+id: data-submission.withdrawn
+contentFile: withdrawn.md
+name: Data Submission Withdrawn
+description: Sent to Data Commons Personnel when a submitter withdraws a data submission.
+notificationKey: data_submission:withdrawn
+subject: "CRDC Data Submission Withdrawn"
+variables:
+  - firstName
+  - submissionID
+  - submissionName
+  - studyName
+  - withdrawnByName
+  - withdrawnByEmail

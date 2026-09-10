@@ -1,0 +1,12 @@
+id: data-submission.rejected
+contentFile: rejected.md
+name: Data Submission Rejected
+description: Sent to the submitter when a data submission is rejected.
+notificationKey: data_submission:rejected
+subject: "CRDC Data Submission Rejected"
+variables:
+  - firstName
+  - submissionID
+  - submissionName
+  - conciergeName
+  - conciergeEmail

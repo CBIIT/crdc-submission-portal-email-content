@@ -1,0 +1,14 @@
+id: data-submission.canceled
+contentFile: canceled.md
+name: Data Submission Canceled
+description: Sent to the submitter when a data submission is canceled.
+notificationKey: data_submission:cancelled
+subject: "CRDC Data Submission Canceled"
+variables:
+  - firstName
+  - submissionID
+  - submissionName
+  - studyName
+  - canceledBy
+  - conciergeName
+  - conciergeEmail

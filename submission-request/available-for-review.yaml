@@ -1,0 +1,11 @@
+id: submission-request.available-for-review
+contentFile: available-for-review.md
+name: Submission Request Available for Review
+description: Sent to Federal Leads when an SRF is submitted and is ready for SRC review.
+notificationKey: submission_request:to_be_reviewed
+subject: "CRDC Submission Request Available for Review"
+variables:
+  - firstName
+  - pi
+  - study
+  - url

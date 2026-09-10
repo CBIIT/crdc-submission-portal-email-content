@@ -1,0 +1,21 @@
+id: data-submission.pv-requested
+contentFile: pv-requested.md
+name: Permissive Value Request Submitted
+description: Sent to Data Commons Personnel when a submitter requests a new permissive value.
+notificationKey: data_submission:pv_requested
+subject: "Inquiry: New Permissive Value Request Submitted via CRDC Submission Portal"
+variables:
+  - firstName
+  - senderName
+  - submitterName
+  - submitterEmail
+  - studyName
+  - studyAbbreviation
+  - submissionID
+  - nodeName
+  - property
+  - CDEId
+  - value
+  - comment
+blocks:
+  - pendingPV

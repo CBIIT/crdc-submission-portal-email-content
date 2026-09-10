@@ -1,0 +1,10 @@
+id: account.inactivated-inactivity
+contentFile: inactivated-inactivity.md
+name: User Account Disabled Due to Inactivity
+description: Sent to a user when their account is disabled after a period of inactivity.
+notificationKey: account:inactivated
+subject: "Your CRDC Submission Portal account has been disabled due to Inactivity"
+variables:
+  - firstName
+  - inactiveDays
+  - officialEmail

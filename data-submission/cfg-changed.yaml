@@ -1,0 +1,14 @@
+id: data-submission.cfg-changed
+contentFile: cfg-changed.md
+name: Data Submission Configuration Changed
+description: Sent to the submitter when the assigned submitter and/or data model version on a submission changes.
+notificationKey: data_submission:cfg_changed
+subject: "Your CRDC Data Submission Configuration Has Changed"
+variables:
+  - firstName
+  - portalURL
+  - studyName
+  - prevModelVersion
+  - newModelVersion
+  - prevSubmitterName
+  - newSubmitterName

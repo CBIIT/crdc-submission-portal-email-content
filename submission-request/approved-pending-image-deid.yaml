@@ -1,0 +1,17 @@
+id: submission-request.approved-pending-image-deid
+contentFile: approved-pending-image-deid.md
+name: Submission Request Approved with Pending Image De-identification
+description: Sent to the submitter when the SRC approves an SRF with image de-identification documentation as the only pending condition.
+notificationKey: submission_request:reviewed
+subject: "CRDC Submission Request Decision"
+variables:
+  - firstName
+  - study
+  - contactEmail
+  - submissionGuideURL
+  - isMultiplePendingConditions
+  - omitSubmissionGuideInFooter
+  - omitDataSubmissionInstructionsOnly
+blocks:
+  - reviewComments
+  - pendingConditions

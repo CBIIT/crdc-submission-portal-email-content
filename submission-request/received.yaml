@@ -1,0 +1,9 @@
+id: submission-request.received
+contentFile: received.md
+name: Submission Request Received
+description: Sent to the submitter when their SRF has been received and is under review.
+notificationKey: submission_request:submitted
+subject: "CRDC Submission Request Received - Your Request is Under Review"
+variables:
+  - firstName
+  - helpDesk

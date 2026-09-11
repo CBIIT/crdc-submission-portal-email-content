@@ -8,8 +8,39 @@ Proposed templates for transactional emails. These files are **not wired into se
 - `data-submission/` — data submission lifecycle emails
 - `account/` — access request, role change, and account status emails
 - [`VARIABLES.md`](VARIABLES.md) — catalog of placeholder names and what they mean
+- [`INTERFACE.md`](INTERFACE.md) — Data Hub implementation plan: load from GitHub, cache by version, render, and admin test send
 
 Each email is a **YAML specification** plus a **Markdown body**. The YAML `id`, `name`, filename, and folder identify which message you are editing.
+
+## Promotion plan
+
+Each Data Hub tier loads copy from a dedicated branch in this repository. Do not commit directly to any of these branches.
+
+| Branch | Tier |
+|--------|------|
+| `prod` | Production |
+| `stage` | Stage |
+| `qa` | QA |
+| `qa2` | QA2 |
+| `dev` | Dev |
+| `dev2` | Dev2 |
+
+### Implement a change
+
+1. Branch off **`dev`** or **`dev2`** (the lower tier where the change should land first). Never branch off `qa`, `qa2`, `stage`, or `prod` for new work.
+2. Open a pull request into that same base (`dev` or `dev2`). Merge only via PR.
+3. Promote the change through higher tiers with **further PRs** between environment branches. Do not push to those branches.
+
+Typical promotion paths:
+
+```text
+feature/*  ──PR──►  dev   ──PR──►  qa   ──PR──►  stage  ──PR──►  prod
+feature/*  ──PR──►  dev2  ──PR──►  qa2
+```
+
+Use the `dev` → `qa` → `stage` → `prod` track for the primary line. Use `dev2` → `qa2` for the second line. If a `qa2` change must reach production, merge it into the primary track with PRs (for example `qa2` → `qa` or `dev2` → `dev`), then continue the usual promotions. Do not skip a tier.
+
+Each PR should fast-forward or otherwise carry the intended commits only. Do not rewrite environment history. Data Hub in each tier should fetch its matching branch (`dev`, `qa`, `prod`, and so on) as the GitHub ref.
 
 ## File format
 

@@ -1,9 +1,0 @@
-id: account.inactivated-admin
-contentFile: inactivated-admin.md
-name: User Account Disabled by Administrator
-description: Sent to a user when an administrator deactivates their account.
-notificationKey: account:inactivated
-subject: "Your CRDC Submission Portal account has been disabled"
-variables:
-  - firstName
-  - officialEmail

@@ -23,11 +23,10 @@
     {{else}}
     <span>[Pending Condition]:</span>
     {{/if}}
-    <br>
-    {{#each pendingConditions}}
-    <br><span>* {{{ this }}}</span>
-    {{/each}}
   </p>
+  {{#each pendingConditions}}
+  <div>* {{{ this }}}</div>
+  {{/each}}
   {{/if}}
   {{#if omitSubmissionGuideInFooter}}
   <p>

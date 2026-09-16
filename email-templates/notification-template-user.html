@@ -13,7 +13,7 @@
   </head>
   <body>
     <p>Dear {{ firstName }},</p>
-    <p>{{ topMessage }}</p>
+    <div>{{{ topMessage }}}</div>
     {{#if additionalInfo}}
     <p>
     {{#each additionalInfo}}
@@ -43,7 +43,7 @@
       {{/each}}
     </p>
     {{/if}}
-    <p>{{ bottomMessage }}</p>
+    <div>{{{ bottomMessage }}}</div>
     <p>Sincerely,</p>
     <p>{{senderName}}</p>
   </body>

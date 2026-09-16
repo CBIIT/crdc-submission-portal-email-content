@@ -13,9 +13,7 @@
 </head>
 <body>
   <p>Dear {{ firstName }},</p>
-  <p>
-    {{{ topMessage }}}
-  </p>
+  <div>{{{ topMessage }}}</div>
   <p><span>[Review Comments]:</span></p>
   <div>{{{markdownToHtml reviewComments}}}</div>
   {{#if pendingConditions}}

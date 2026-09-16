@@ -13,7 +13,7 @@
   </head>
   <body>
     <p>Dear {{ firstName }},</p>
-    <p>{{ message }}</p>
+    <div>{{{ message }}}</div>
     <ul style="margin: 0.5em 0 1em 0; padding-left: 1.75em; list-style-type: disc">
       <li style="margin: 0.25em 0">
         <strong>Study Name: </strong><span>{{ studyName }}</span>
@@ -22,12 +22,12 @@
         <strong>Study Abbreviation: </strong><span>{{ studyAbbreviation }}</span>
       </li>
     </ul>
-    <p>{{ secondMessage }}</p>
+    <div>{{{ secondMessage }}}</div>
     {{#if reviewComments}}
     <p><span>[Review Comments]:</span></p>
     <div>{{{markdownToHtml reviewComments}}}</div>
     {{/if}}
-    <p>{{ thirdMessage }}</p>
+    <div>{{{ thirdMessage }}}</div>
     <p>Sincerely,</p>
     <p>CRDC Submission Portal</p>
   </body>

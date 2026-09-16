@@ -13,8 +13,8 @@
   </head>
   <body>
     <p>Dear {{ firstName }},</p>
-    <p>{{ message }}</p>
-    <p>{{ secondMessage }}</p>
+    <div>{{{ message }}}</div>
+    <div>{{{ secondMessage }}}</div>
     <ul style="margin: 0.5em 0 1em 0; padding-left: 1.75em; list-style-type: disc">
       <li style="margin: 0.25em 0">
         <strong>Study: </strong><span>{{ studyName }} ({{ studyAbbreviation }})</span>
@@ -29,7 +29,7 @@
       You have been assigned as the new owner of this SRF and are responsible for completing and resubmitting it.
     </p>
     {{/if}}
-    <p>{{ thirdMessage }}</p>
+    <div>{{{ thirdMessage }}}</div>
     <p>Sincerely,</p>
     <p>CRDC Submission Portal</p>
   </body>

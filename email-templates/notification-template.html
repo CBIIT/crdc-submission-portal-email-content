@@ -13,13 +13,13 @@
   </head>
   <body>
     <p>Dear {{ firstName }},</p>
-    <p>{{{ message }}}</p>
+    <div>{{{ message }}}</div>
     {{#if reviewComments}}
     <p><span>[Review Comments]:</span></p>
     <div>{{{markdownToHtml reviewComments}}}</div>
     {{/if}}
     {{#if secondMessage}}
-      <p>{{ secondMessage }}</p>
+      <div>{{{ secondMessage }}}</div>
     {{/if}}
     {{#if studyName}}
     <p>
@@ -28,7 +28,7 @@
     </p>
     {{/if}}
     {{#if thirdMessage}}
-    <p>{{ thirdMessage }}</p>
+    <div>{{{ thirdMessage }}}</div>
     {{/if}}
     {{#if additionalMsg}}
       {{#each additionalMsg}}

@@ -60,7 +60,7 @@ REMIND_EXPIRED_APPLICATION_SECOND_CONTENT: "If no updates are made within the ne
 COMPLETE_DATA_SUBMISSION_SUBJECT: "CRDC Data Submission Completed"
 COMPLETE_DATA_SUBMISSION_CONTENT: "The Data Submission, $submissionName for the <b>$studyName</b> study has been completed and all data successfully transferred to the appropriate data commons. If you believe this is an error, please contact $conciergeName at $conciergeEmail"
 CANCEL_DATA_SUBMISSION_SUBJECT: "CRDC Data Submission Canceled"
-CANCEL_DATA_SUBMISSION_CONTENT: "Data Submission $submissionID / $submissionName for study <b>$studyName</b> has been canceled by user $canceledBy and no further work on this submission will be possible. If this cancellation is in error, please contact $conciergeName at $conciergeEmail"
+CANCEL_DATA_SUBMISSION_CONTENT: "Data Submission $submissionID / $submissionName for study <b>$studyName</b> has been canceled by user $canceledBy and no further work on this submission will be possible. If this cancellation is in error, $conciergeName at $conciergeEmail please contact $conciergeName at $conciergeEmail"
 SUBMIT_DATA_SUBMISSION_SUBJECT: "Submission Received – Your Data is Now Under Review"
 SUBMIT_DATA_SUBMISSION_CONTENT_FIRST: "Thank you for your data submission, $submissionName to the CRDC Submission Portal. We have successfully received your data submission, and the Data Concierge assigned to your submission will begin the review process shortly."
 SUBMIT_DATA_SUBMISSION_CONTENT_SECOND: "During the review, you’ll be notified if we require any additional information or changes. If your submission meets all requirements, it will be scheduled for the release to the $dataCommonsName Data Commons. If you have any questions, please contact $contactName via $contactEmail"
